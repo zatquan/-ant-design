@@ -15,13 +15,6 @@
     "mobile",
     "react native"
   ],
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/ant-design/ant-design-mobile-rn"
-  },
-  "bugs": {
-    "url": "http://github.com/ant-design/ant-design-mobile-rn/issues"
-  },
   "files": [
     "lib",
     "es"
@@ -134,17 +127,5 @@
     "lint-staged:ts": "npm run tsc && node node_modules/tslint/bin/tslint -c node_modules/antd-tools/lib/tslint.json components/**/*.tsx",
     "lint-staged:es": "eslint ./.eslintrc.js",
     "tsc": "antd-tools run tsc"
-  },
-  "lint-staged": {
-    "components/**/*.tsx": [
-      "npm run lint-staged:ts"
-    ],
-    "{tests,site,scripts,components}/**/*.{js,jsx}": [
-      "npm run lint-staged:es"
-    ]
-  },
-  "typings": "lib/index.d.ts",
-  "pre-commit": [
-    "lint-staged"
-  ]
+  }
 }
